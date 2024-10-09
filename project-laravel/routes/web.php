@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'Let\'s start clean!';
-});
+Route::get('/', [DashboardController::class, 'viewHome']);
+
+Route::get('/register', [AuthController::class, 'viewRegister']);
+
+Route::post('/welcome', [AuthController::class, 'viewWelcome']);
