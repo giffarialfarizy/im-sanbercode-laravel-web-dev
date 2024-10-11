@@ -1,0 +1,76 @@
+/* Top Navigation */
+.top-nav {
+	background-color: #f8f9fa;
+}
+
+.top-nav a {
+	color: #333;
+	margin-left: 1.5em;
+}
+
+/* Logo Styling */
+.logo img {
+	max-width: 180px;
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+	position: relative;
+}
+
+.search-bar {
+	width: 100%;
+	max-width: 400px;
+	padding-right: 40px;
+}
+
+.search-bar-icon {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+}
+
+/* Main Navigation */
+.main-nav {
+	background-color: #f8f9fa;
+}
+
+.main-nav a {
+	color: #333;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main-nav a:hover {
+	color: #007bff;
+}
+
+/* Flex Styling for Navigation */
+.main-nav .container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* Carousel */
+
+.img-crop-600-300 {
+	width: 600px; /* Set the width */
+	height: 300px; /* Set the height */
+	overflow: hidden; /* Hide overflow */
+	position: relative; /* Positioning context */
+}
+
+.img-crop-600-300 img {
+	position: absolute; /* Position the image */
+	top: 50%; /* Center it vertically */
+	left: 50%; /* Center it horizontally */
+	width: auto; /* Maintain aspect ratio */
+	height: auto; /* Maintain aspect ratio */
+	min-width: 100%; /* Cover the width */
+	min-height: 100%; /* Cover the height */
+	transform: translate(-50%, -50%); /* Center the image */
+}
