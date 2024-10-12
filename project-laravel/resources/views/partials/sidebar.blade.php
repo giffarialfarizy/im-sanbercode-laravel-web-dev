@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link {{ Request::is('table') || Request::is('data-table')  ? 'active' : '' }}">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Tables
@@ -64,6 +64,14 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/category" class="nav-link {{ Request::is('category') || Request::is('category/*') ? 'active' : '' }}">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                Category
+              </p>
+            </a>
           </li>
         </ul>
       </nav>
